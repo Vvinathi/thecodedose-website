@@ -5,7 +5,6 @@ import Layout from "../components/layout";
 import PostLink from "../components/postLink";
 
 export default function TagTemplate({ pageContext, data }) {
-  console.log("TagTemplate component is rendering");
   const { site, blogPosts, tagsGroup } = data;
   const { tag } = pageContext;
 
@@ -29,7 +28,7 @@ export default function TagTemplate({ pageContext, data }) {
       </Helmet>
       <div className="tagpage__container">
         <div className="tagpage__title bg-pink p-6 text-center border-b border-black">
-          <h1 className="text-5xl font-extrabold capitalize">{tag}</h1>
+          <h1 className="capitalize text-5xl font-extrabold">{tag}</h1>
 
           <span className="tagpage__subheading text-sm">
             {tagHeader} &darr;
